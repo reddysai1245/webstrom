@@ -1,0 +1,24 @@
+h1
+{
+  color:red;
+}
+.dropdown-toggle
+{
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+
+    
+ }
+.dropdown-toggle a{
+	color:white;
+}
+
+.navbar-custom{
+	background-color: #ffeb2c;
+	color:white;
+}
+.navbar-custom a:hover li:hover{
+	background-color: black;
+}
