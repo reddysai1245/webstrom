@@ -1,31 +1,4 @@
-h1
-{
-  color:red;
-}
-.navbar
-{
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-}
-.dropdown-toggle
-{
-  display: none;
-}
-.dropdown:hover .dropdown-menu
- {
-    display: block;
- }
-.dropdown-toggle a{
-	color:white;
-}
-.navbar{
-	background-color: #ffeb2c;
-	color:white;
-  border: none;
-}
-.navbar-custom li:hover a:hover{
-	background-color: black;
-}
+
 /*Footer Related css*/
 p
 {
