@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% extends 'sathyabamaapp/base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+{% block title %}Home{% endblock title%}
+{% block bodyblock %}
+<!-- LATEST NEWS -->
+<div class="onoffswitch3">
+    <input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" checked>
+    <label class="onoffswitch3-label" for="myonoffswitch3">
+        <span class="onoffswitch3-inner">
+            <span class="onoffswitch3-active">
+                <marquee class="scroll-text">Avengers: Infinity War's Iron Spider Suit May Use Bleeding Edge Tech  &nbsp<i class="fas fa-forward"></i> &nbsp Russo brothers ask for fans not to spoil Avengers: Infinity War&nbsp <i class="fas fa-forward"></i> &nbsp Bucky's Arm Miraculously Regenerates On Avengers: Infinity War Poster</marquee>
+                <span class="onoffswitch3-switch">LATEST NEWS</span>
+            </span>
+            <span class="onoffswitch3-inactive"><span class="onoffswitch3-switch">SHOW BREAKING NEWS</span></span>
+        </span>
+    </label>
+</div>
+<!-- -->
+  <!--VIDEO-->
+  <video class="video" width="100%" height="100%" muted="true" autoplay loop>
+    <source src="static/videos/video.mp4" type="video/mp4">
+  </video>
+  <!-- -->
+<!-- BOOTSTRAP CARD -->
+<div class="slider owl-carousel">
+    <div class="card">
+      <div class="img"><img src="{%static "images/colonel_dr_jeppiaar.jpg" %}" alt="DR-JEPPIAAR"></div>
+      <div class="content">
+        <div class="title">COLONEL DR. JEPPIAAR</div>
+        <div class="sub-title">M.A., B.L., PH.D.,</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="btn">
+          <button>VIEW PROFILE</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img"><img src="{%static "images/dr_mariazeena_johnson1.jpg" %}" alt="DR_MARIAZEENA_JOHNSON"></div>
+      <div class="content">
+        <div class="title">COLONEL DR. MARIAZEENA_JOHNSON</div>
+        <div class="sub-title">B.E., MBA., M.Phil., Ph.D.</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="btn">
+          <button>VIEW PROFILE</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="img"><img src="{%static "images/dr_marie_johnson.jpg" %}" alt="DR_MARIE_JOHNSON"></div>
+      <div class="content">
+        <div class="title">COLONEL DR. MARIE_JOHNSON</div>
+        <div class="sub-title">B.E., MBA., M.Phil., Ph.D.</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="btn">
+          <button>VIEW PROFILE</button>
+        </div>
+      </div>
+    </div>
+</div>
+<script>
+  $(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+  });
+</script>
+<!-- END OF BOOTSTRAP CARD -->
+{% endblock bodyblock %}
