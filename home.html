@@ -3,6 +3,11 @@
 {% load static %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
+<!--script online for counter-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="https://kit.fontawesome.com/04b9afe01e.js" crossorigin="anonymous"></script>
+<!--end of scripts foe counter-->
 {% endblock %}
 {% block title %}Home{% endblock title%}
 {% block bodyblock %}
@@ -25,6 +30,45 @@
     <source src="static/videos/video.mp4" type="video/mp4">
   </video>
   <!-- -->
+
+  <!--counter-->
+<div class="container-fluid bgc">
+  <div class="row justify-content-center">
+      
+        <div class=" col col-2">
+          <div class="content-center">
+          <span style="color: #FFD708;">   <i class="fas fa-book-reader fa-5x"></i></span>
+          <div class="num">   1235</div>
+          <h5>    Student</h5>
+        </div>
+        </div>
+        <div class="col col-2">
+          <div class="content-center">
+          <span style="color: #FFD708;"><i class="fas fa-users fa-5x"></i></span>
+          <div class="num">124</div>
+          <h5>Alumni</h5> 
+        </div>
+      </div>
+        <div class="col col-2">
+          <span style="color: #FFD708;"><i class="fas fa-chalkboard-teacher fa-5x"></i></span>
+          
+          <div class="num">123</div>
+          <h5>Lectureses</h5> 
+        </div>
+        <div class="col col-2">
+          <span style="color: #FFD708;"><i class="fas fa-user-graduate fa-5x"></i></span>
+          <div class="num">12</div>
+          <h5>Graduates</h5>
+        </div>
+      
+    </div>
+  </div>
+  <!--counter end-->
+  <!--script for counter-->
+  <script type="text/javascript">
+    $(".num").counterUp({delay:10,time:1000});
+  </script>
+  <!--en of counter script-->
 <!-- BOOTSTRAP CARD -->
 <div class="slider owl-carousel">
     <div class="card">
