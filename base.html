@@ -30,13 +30,52 @@
 {% endblock scriptblock %}
 </head>
 <body>
-<!--nav-->
-<nav class="navbar navbar-dark navbar-expand-lg fixed-top justify-content-between">
+<!--HEADER-->
+<div class="logo d-none" style="display:none">
+  <a href="#">
+    <img class = " img-fluid lazyload" src="{% static "images/sathyabama1.jpg" %}" alt="SATHYABAMA" title="SATHYABAMA">
+  </a>
+</div>
+<div style="clear:both" class="container-fluid clearfix">
+</div>
+<div class="header-logos-sm">
+  <a href="#">
+    <img class="ls-is-cached lazyloaded" src="{% static "images/sathyabama small1.png" %}" alt="SATHYABAMA SMALL" title="SATHYABAMA">
+  </a>
+</div>
+<div class="header-logo">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 text-left category">
+      <a href="#">
+        <img src="{% static "images/logo12.png" %}" alt="NCC" title="NAAC">
+      </a>
+      <a href="#">
+        <img src="{% static "images/logo11.png" %}" alt="NAAC" title="RATING">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="#">
+        <img src="{% static "images/logo.jpg" %}" alt="SATHYABAMA" title="SATHYABAMA" >
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-4 text-right naac">
+      <a href="#">
+        <img src="{% static "images/logo13.png" %}" alt="NAAC" title="OVERALL INDIA RANK">
+      </a>
+      <a href="#">
+        <img src="{% static "images/logo14.png" %}" alt="NAAC" title="WORLD UNIVERSITY RANKING">
+      </a>
+    </div>
+  </div>
+</div>
+<!-- END OF HEADER -->
+<!-- NAVBAR -->
+  <nav class="navbar navbar-dark navbar-expand-lg sticky-top">
 
         <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#Nav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mr-auto" href="index1.html" title="Sathyabama"><img class ="image" src="{%static "images/logo.jpg" %}" alt="SATHYABAMA"></a>
+        <a class="navbar-brand mr-auto" href="index1.html" title="Sathyabama">SATHYABAMA</a>
             <div class="collapse navbar-collapse" id="Nav">
             <ul class="navbar-nav mr-auto">
                 <!--creating about us-->
@@ -236,7 +275,7 @@
 
 </nav>
 
-<!--nav ended-->
+<!-- END OF NAVBAR -->
 <br>
 <br>
 <br>
