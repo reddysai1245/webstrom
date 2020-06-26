@@ -158,6 +158,11 @@
 }
 .carousel {
   border: 2px solid #416be4;
+  padding-bottom : 70px;
+  padding-top: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
+  cursor : grab;
   height: 300px;
   overflow: hidden;
   position: relative;
@@ -176,38 +181,11 @@
 }
 .section1 h1{
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 .section1 p{
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align-last: center;
-}
-.section2 h1{
-  text-align: center;
-  margin-top: 100px;
-}
-.section2 p{
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align-last: center;
-}
-.section3 h1{
-  text-align: center;
-  margin-top: 100px;
-}
-.section3 p{
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align-last: center;
-}
-.section4 h1{
-  text-align: center;
-  margin-top: 100px;
-}
-.section4 p{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 20px;
+  margin-right: 10px;
   text-align-last: center;
 }
 .left, .right {
@@ -248,4 +226,86 @@
 }
 .control ul li.selected {
   background: transparent;
+}
+.carousel-indicators li
+{
+  background-color:rgba(196, 94, 27, 0.788);
+}
+.carousel-indicators .active{
+  background-color: #01a2ff;
+}
+.cr{
+  margin-top: 200px;
+  cursor: pointer;
+}
+
+/*AWARDS*/
+.container2 {
+  width: 90%;
+  margin:20px auto;
+}
+#awardsh1{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25PX;
+}
+.shadow1{
+    box-shadow: 0px 5px 5px #888888;
+    z-index:999;
+}
+.card1{
+  margin-top: 20px;
+}
+.inner{
+  overflow: hidden;
+}
+.inner img{
+  transition: all 1.0s ease;
+}
+.inner:hover img{
+  transform: scale(1.3);
+}
+.card-title{
+  color: orange;
+}
+.card-text{
+  color: black;
+}
+/*MARQUEE TAG FOR COMAPANIES*/
+.company{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.companyh1{
+  float: left;
+  font-size: 70px;
+  padding-right: 30px;
+}
+/*PROGRAMS OFFERED */
+.programs{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.h5{
+  font-size: 20px;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+}
+h3{
+  display: block;
+}
+.color-gray{
+  color: #999 !important;
+  font-size: 20px;
+}
+small{
+  font-size: 80%;
+  font-weight: 400;
+}
+.title-hr{
+  width: 40px;
+  border-top: 3px solid #ed1b23;
+  margin-left: 0px;
+  margin-top: 0rem;
 }
