@@ -72,7 +72,7 @@
     color: #000;
 }
 /*END OF LATEST NEWS */
-/* BOOTSTRAP CARD */
+/* BOOTSTRAP CARD
 .slider{
   max-width: 1550px;
   display:flex;
@@ -93,25 +93,71 @@
 .slider .card .content{
   padding: 10px 20px;
 }
-.card .content .title{
+slder ==> wrapper1
+card ==> single-testi
+}*/
+.wrapper1{
+  width: 1170px;
+  margin: 0 auto;
+  cursor: grab;
+}
+.section-padding{
+  padding: 60px 0;
+}
+.testimonial-carousel{
+  margin: 25px 0px;
+  padding: 0px;
+}
+.wrapper1 .single-testi .content{
+  padding: 10px 20px;
+}
+.owl-dots{
+  text-align: center;
+}
+.owl-dot{
+  display: inline-block;
+  height: 15px !important;
+  width: 15px !important;
+  background: black;
+  opacity: 0.8;
+  border-radius: 50%;
+  margin: 50px 5px 0;
+}
+.owl-dot.active{
+  background-color: #ff5257 !important;
+}
+owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+}
+.single-testi .content .title{
   font-size: 22px;
   font-weight: 600;
 }
-.card .content .sub-title{
+.single-testi .content .sub-title{
   font-size: 25px;
   font-weight: 600;
   color: #e74c3c;
 }
-.card .content .p{
+.sigle-testi .content .p{
   text-align: justify;
   margin: 10px 0px;
 }
-.card .content .btn{
+
+.single-testi .content .btn{
   display: block;
   text-align: left;
   margin: 10px 0px;
 }
-.card .content .btn button{
+.single-testi .content .btn button{
   background: #e74c3c;
   color: #fff;
   border: none;
@@ -122,9 +168,10 @@
   cursor: pointer;
   transition: 0.2s;
 }
-.card .content .btn button:hover{
+.single-testi .content .btn button:hover{
   transform: scale(0.9);
 }
+
 /* END OF BOOTSTRAP CARD */
 /* COUNTER CSS */
 .num{
@@ -309,3 +356,26 @@ small{
   margin-left: 0px;
   margin-top: 0rem;
 }
+.fa-chevron-left::before{
+  font-size: 50px;
+  color: black;
+}
+.fa-chevron-right::before{
+  font-size: 50px;
+  color: black;
+}
+/*RESPONSIVE CSS FOR CHANCELLORS SLIDER */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .wrapper1{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px){
+  .wrapper1{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+  .wrapper1{
+    width: 100%;
+  }

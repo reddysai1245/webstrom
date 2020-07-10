@@ -9,6 +9,7 @@
 {% block jsblock %}
 <script src="{% static 'javascript/home.js' %}" type="text/javascript"></script>
 <script src="{% static 'javascript/counter.js' %}" type="text/javascript"></script>
+<script src="{% static 'javascript/owl.carousel.js' %}" type="text/javascript"></script>
 {% endblock jsblock %}
 <!--script online for counter-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
@@ -37,7 +38,7 @@
   </div>
   <!--END OF LATEST NEWS -->
   <!--counter-->
-<div class="container-fluid bgc">
+<div class="container-fluid bgc" data-aos="fade-right">
   <div class="row justify-content-center">
 
         <div class=" col col-2">
@@ -69,12 +70,12 @@
   </div>
   <!--END OF COUNTER-->
 <!-- PROGRAMS OFFERED -->
-<h1 class="programs">PROGRAMS OFFERED</h1>
+<h1 class="programs" data-aos="fade-right">PROGRAMS OFFERED</h1>
 <div class="container">
-  <div class="row">
+  <div class="row" data-aos="fade-left">
   <div class="card-deck">
     <div class="col-lg-4 col-md-6">
-      <div class="card shadow1">
+      <div class="card shadow1" style="width: 18rem;height: 30rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Programs Offered/diploma.jpg" %}" alt="Card image cap">
         </div>
@@ -90,7 +91,7 @@
       </div>
     </div>
     <div class="col-lg-4 col-md-6">
-      <div class="card shadow1">
+      <div class="card shadow1" style="width: 18rem;height: 30rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Programs Offered/B.Tech.jpg" %}" alt="Card image cap">
         </div>
@@ -106,7 +107,7 @@
       </div>
     </div>
     <div class="col-lg-4 col-md-6">
-      <div class="card shadow1">
+      <div class="card shadow1" style="width: 18rem;height: 30rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Programs Offered/M.Tech.jpg" %}" alt="Card image cap">
         </div>
@@ -124,6 +125,8 @@
   </div><!--end of card-deck -->
 </div><!-- end of row -->
 </div><!--end of container -->
+
+<!--END OF PROGRAMS -->
 <!--modal content for jeppier-->
   <div id="jeppiaar" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
@@ -195,9 +198,13 @@
 <!--end of modal-->
 
 <!-- BOOTSTRAP CARD -->
-<div class="slider owl-carousel">
-    <div class="card">
-      <div class="img"><img src="{%static "images/colonel_dr_jeppiaar.jpg" %}" alt="DR-JEPPIAAR"></div>
+<div class="container" data-aos="fade-right">
+  <div class="wrapper1">
+  <div class="testimonial-carousel section-padding owl-carousel">
+    <div class="single-testi">
+      <div class="img-area">
+        <img src="{%static "images/colonel_dr_jeppiaar.jpg" %}" alt="DR-JEPPIAAR" height="300px">
+      </div>
       <div class="content">
         <div class="title">COLONEL DR. JEPPIAAR</div>
         <div class="sub-title">M.A., B.L., PH.D.,</div>
@@ -207,8 +214,10 @@
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="img"><img src="{%static "images/dr_mariazeena_johnson1.jpg" %}" alt="DR_MARIAZEENA_JOHNSON"></div>
+    <div class="single-testi">
+      <div class="img-area">
+        <img src="{%static "images/dr_mariazeena_johnson1.jpg" %}" alt="DR_MARIAZEENA_JOHNSON" height="300px">
+      </div>
       <div class="content">
         <div class="title">COLONEL DR. MARIAZEENA_JOHNSON</div>
         <div class="sub-title">B.E., MBA., M.Phil., Ph.D.</div>
@@ -218,8 +227,10 @@
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="img"><img src="{%static "images/dr_marie_johnson.jpg" %}" alt="DR_MARIE_JOHNSON"></div>
+    <div class="single-testi">
+      <div class="img-area">
+        <img src="{%static "images/dr_marie_johnson.jpg" %}" alt="DR_MARIE_JOHNSON" height="300px">
+      </div>
       <div class="content">
         <div class="title">COLONEL DR. MARIE_JOHNSON</div>
         <div class="sub-title">B.E., MBA., M.Phil., Ph.D.</div>
@@ -227,8 +238,12 @@
         <div class="btn">
           <button data-toggle="modal" data-target="#johan">VIEW PROFILE</button>
         </div>
+
       </div>
     </div>
+
+  </div>
+</div>
 </div>
 <!-- END OF CARDS -->
 <!-- CONTENT SLIDER-->
@@ -273,12 +288,12 @@
 </div>
 
 <!--AWARDS -->
-<h1 id="awardsh1">AWARDS AND ACCOLADES</h1>
-<div class="container2">
+<h1 id="awardsh1" data-aos="fade-left">AWARDS AND ACCOLADES</h1>
+<div class="container2" data-aos="fade-right">
   <div class="row">
     <div class="card-deck">
       <div class="col-lg-3 col-md-6">
-        <div class="card shadow1" style="width: 18rem;">
+        <div class="card shadow1" data-aos="slide-left" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/guinness1.png" %}" alt="GUINNESS" title="Guinness World Record">
           </div>
@@ -289,7 +304,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card shadow1" style="width: 18rem;">
+        <div class="card shadow1" data-aos="zoom-in"style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/birla.jpg" %}" alt="BIRLA" height="172.28" title="Birla White Yuva Ratna">
           </div>
@@ -300,7 +315,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card shadow1" style="width: 18rem;">
+        <div class="card shadow1" data-aos="zoom-in-right" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/limca2.png" %}" alt="LIMCA BOOK OF RECORDS" title="Limaca Book of Records">
           </div>
@@ -311,7 +326,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card card1 shadow1" style="width: 18rem;">
+        <div class="card card1 shadow1" data-aos="zoom-out-down" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/sharonplywoods2.png" %}" alt="NATIONAL LEVEL AWARD" title="National Level Award">
           </div>
@@ -322,7 +337,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class="card card1 shadow1" style="width: 18rem;">
+        <div class="card card1 shadow1" data-aos="zoom-out-up" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/NIASAthesisawards.png" %}" alt="NIASA THESIS AWARD" title="Niasa Thesis Award">
           </div>
@@ -333,7 +348,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
-      <div class="card card1 shadow1" style="width: 18rem;">
+      <div class="card card1 shadow1" data-aos="zoom-in-left" style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Awards/pidiliteaward1.png" %}" alt="PILIDILITE AWARD" title="Pilidilite Award">
         </div>
@@ -344,7 +359,7 @@
       </div>
     </div>
     <div class="col-lg-3 col-md-6">
-      <div class="card card1 shadow1" style="width: 18rem;">
+      <div class="card card1 shadow1" data-aos="zoom-out" style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Awards/professortonymemorialaward.png" %}" alt="PROFESSOR TONY MEMORIAL AWARD" title="Professor Tony Memorial Award">
         </div>
@@ -355,7 +370,7 @@
       </div>
     </div>
     <div class="col-lg-3 col-md-6">
-      <div class="card card1 shadow1" style="width: 18rem;">
+      <div class="card card1 shadow1" data-aos="fade-left"  style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Awards/beststudio.png" %}" alt="BEST STUDIO PROJECT" title="Best Studio Project">
         </div>
@@ -379,20 +394,33 @@
     <img src="{% static "images/Companies/csc.jpg" %}" alt="" width="158" height="73">
     <img src="{% static "images/Companies/hcl.jpg" %}" alt="" width="158" height="73">
   </marquee>
-<!-- SCRIPT FOR SLIDER -->
+<!-- SCRIPT FOR CHANCELLORS SLIDER -->
 <script>
-  $(".slider").owlCarousel({
-    loop: true,
+$('.testimonial-carousel').owlCarousel({
+    loop:true,
+    margin:20,
     autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
-  });
+    dots: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
 </script>
-<!--END OF SLIDER -->
+<!--END OF CHANCELLORS SLIDER -->
 <!--SCRIPT FOR CONTENT SLIDER -->
 <script>
    $(document).ready(function(){
-       $("#carouselExampleIndicators").carousel( { interval:  1500 } );
+       $("#carouselExampleIndicators").carousel( { interval:  2000 } );
 
    });
 </script>
