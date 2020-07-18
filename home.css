@@ -113,12 +113,13 @@ card ==> single-testi
 }
 .owl-dots{
   text-align: center;
+
 }
 .owl-dot{
   display: inline-block;
   height: 15px !important;
   width: 15px !important;
-  background: black;
+  background: black !important;
   opacity: 0.8;
   border-radius: 50%;
   margin: 50px 5px 0;
@@ -182,7 +183,7 @@ owl-theme .owl-controls .owl-page {
       margin-bottom: 0px;
   }
 .bgc{
-    background-color: blanchedalmond;
+    background-color:#ffc;
 }
  .content-center>p{
      top:0;
@@ -195,8 +196,100 @@ owl-theme .owl-controls .owl-page {
  }
 /* END OF COUNTER */
 /* VIDEO CSS */
+.tipTool {
+    position: absolute;
+    right: 5%;
+    top:26%;
+    z-index: 2000;
+}
+.tipTool a{
+  display: grid;
+}
+.tipTool>.btn-secondary{
+  background-color: #fffffa;
+  border-color: #fffffa;
+  transition-delay: .2s;
+}
+.tipTool>.btn-secondary:hover{
+  background-color: black;
+  border-color: black;
+}
+.tipTool>.btn-secondary:hover>.loc{
+  transition-delay: .3s;
+  color:#ffffff;
+}
+.tipTool>.btn{
+  border: 0px;
+
+}
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color:#ff5257;
+  text-align: center;
+  background-color:white;
+  border-radius: .25rem;
+}
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before, .tooltip.bs-tooltip-bottom .arrow::before {
+  margin-left: -3px;
+  content: "";
+  border-width: 0 5px 5px;
+  border-bottom-color: white;
+}
+.center{
+  height: 100vh;
+  color:#fff;
+  display: grid;
+  align-items: center;
+}
+.mouseLayout{
+  width: 100px;
+  height: 150px;
+  background-color: transparent;
+  border: 9px solid #fff;
+  border-radius: 50px;
+  position: relative;
+}
+.mouseLayout::before{
+  content: "";
+  border: 8px solid #fff;
+  position: absolute;
+  top:40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  animation: drop 1s linear infinite;
+}
+.mouseLayout::after
+{
+  content: "";
+  border:6px solid #fff;
+  height: 20px;
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50px;
+  translate: all 2s ease;
+}
+@keyframes drop{
+  0%{
+    transform: translate(-50%,30px);
+    opacity: 0;
+  }
+  60%{
+    transform: translate(-50%,70px);
+    opacity: .8;
+  }
+  100%{
+    transform: translate(-50%,80px);
+    opacity: 1;
+  }
+}
 .video{
-  margin-top: 0px;
+  width: 100%;
+  height: auto;
+  z-index: 0;
 }
 /*CONTENT CSS*/
 .container1 {
@@ -379,3 +472,4 @@ small{
   .wrapper1{
     width: 100%;
   }
+}

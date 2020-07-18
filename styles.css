@@ -5,9 +5,12 @@
 /* 5.SCROLL UP */
 /* 6.RESPONSIVE CSS FOR FOOTER */
 /* 7.MEDIA QUERY FOR NAVBAR */
-
+html{
+  min-width: 100%;
+}
 body{
   overflow-x: hidden;
+  min-width: 100%;
 }
 /* SCROLL BAR */
 ::-webkit-scrollbar{
@@ -23,6 +26,8 @@ body{
 
 }
 /* END OF SCROLL BAR */
+/*video*/
+
 /*HAMBURGER*/
 .menu-btn.navbar-toggler{
   padding: 0px;
@@ -133,50 +138,75 @@ body{
   display:none;
   }
 .header-logos-sm {  display:block }
-.header-logos-sm img {  width:100%; }
+.header-logos-sm img {  width:inherit; }
 .top_header li{ font-size:14px; list-style-type:none; margin-right:1px;padding-left: 5px; }
  }
 /*END OF HEADER CSS */
 /*------------2.NAVBAR CSS------*/
+.navbar{
+  z-index:2001;
+}
 .navbar-dark{
- background-color: #0f0f01;
- padding-left:0px;
+ background-color:#F5B041;
+ padding-left: 0px;}
+ .navbar-brand{
+
+ padding-left:5px;
+}
+.navbar-dark .navbar-brand{
+  color:white;
+}
+.navbar-dark .navbar-brand:hover{
+  color: white;
+
 }
 .dropdown a:hover{
- color: #33ffff;
+ color: #ca3145;
  border-radius: 5px;
  text-decoration: none;
- box-shadow: 0 0 5px #33ffff;
+ box-shadow: 0 0 5px #E74C3C;
 }
 .navbar-dark .navbar-nav .nav-item .nav-link{
- color: white;
+ color:white;
+ border: 3px ;
+  
+
+ overflow: hidden;
 }
 .navbar-dark .navbar-nav .nav-item .nav-link:hover{
- color: #33ffff;
+ color: #E74C3C;
+ border-bottom:dashed #E74C3C;
 }
 .dropdown-menu{ /*below about us*/
  background: white;
  margin-top: 0px;
  padding:0px;
+ 
 }
+
 .dropdown-menu a:hover{
- color: cyan;
- background: black;
+ color: rgba(228, 89, 25, 0.945);
+ background-color: moccasin;
  box-shadow: none;
 }
 
-.navbar .dropdown:hover .dropdown-menu {
+
+
+
+.navbar-nav>.dropdown:hover>.dropdown-menu {
+  
  visibility: visible;
  opacity: 1;
  -webkit-transform: translateY(0);
  transform: translateY(0);
- top:40px;
+ top:45px;
 }
-.navbar .dropdown-menu
+.navbar-nav>.dropdown>.dropdown-menu
 {
  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
- border-top: 5px solid cyan;
+ border-top: 5px solid #E74C3C;
  padding: 15px;
+ padding-right: 0px;
  top: 96px;
  border-radius: 0;
  display: block;
@@ -187,11 +217,81 @@ body{
  transform: translateY(20px);
  background: #fff;
 }
-.fa-angle-double-right::before
-{
- margin-left: 40px;
- font-size: 15px;
+@media only screen and (max-width: 996px) {
+
+  .navbar-nav>.dropdown:hover>.dropdown-menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    top:40px;
+   }
+   .navbar-nav>.dropdown>.dropdown-menu
+   {
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #E74C3C;
+    padding: 15px;
+    padding-right: 0px;
+    min-width: 33vw;
+    top: 96px;
+    border-radius: 0;
+    display: none;
+    visibility: hidden;
+    transition: .3s ease;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    background: #fff;
+   }
 }
+.dropdown-item .fa-angle-double-right
+{
+ margin-left:  20px;
+ font-size: 15px;
+ transition:margin-left 1s linear;
+}
+.dropdown-item:hover .fas.fa-angle-double-right{
+  
+  margin-left:100px;
+}
+.dropdown-submenu {
+  position: relative;
+  
+}
+.ext::after{
+  margin-left: 10px;
+  content: "»";
+  transition:margin-left 1s linear;
+}
+.dropdown-item:hover.ext::after{
+  margin-left: 40px;
+}
+.dropdown-submenu>.dropdown-menu{
+  top: 0;
+
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px solid red;
+
+  
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+  border-top: 5px solid #E74C3C;
+  padding: 15px;
+  padding-right: 0px;
+}
+
+
+
+
+
 /* ----END OF NAVBAR CSS ---- */
 /* ------------------------------3.FOOTER CSS-------------------------*/
 .footer-hr{
@@ -211,49 +311,49 @@ body{
   padding:0px 0px 0px 0px;
   /*padding-bottom: 10px;*/
 }
-.segment-two h2
+.segment-two>h2
 {
   color: #fff;
   font-family: poppins;
   text-transform: uppercase;
   font-size: 18px;
 }
-.segment-two h2:hover
+.segment-two>h2:hover
 {
   color:yellow;
 }
-.segment-two h2::before
+.segment-two>h2::before
 {
   content: '|';
   size:30px;
   color:rgba(247, 13, 5,1.0);
   padding-right: 10px;
 }
-.segment-two ul
+.segment-two>ul
 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.segment-two ul li
+.segment-two>ul>li
 {
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
   line-height: 40px;
 }
-.segment-two ul li a
+.segment-two>ul>li>a
 {
   color: #999;
   text-decoration: none;
 }
-.segment-two li a:hover
+.segment-two>ul>li>a:hover
 {
   color: #ffffff;
 }
-.segment-two h2
+.segment-two>h2
 {
   margin-bottom: 15px;
 }
-.segment-three h2
+.segment-three>h2
 {
   color: #fff;
   font-family: poppins;
@@ -261,13 +361,13 @@ body{
   font-size: 18px;
 }
 /*social media icons css*/
-.segment-three ul{
+.segment-three>ul{
   display: flex;
   margin-top: 20px;
   padding: 0px;
   list-style: none;
 }
-.segment-three ul li{
+.segment-three>ul>li{
   background: white;
   width: 50px;
   height: 50px;
@@ -280,7 +380,7 @@ body{
   transition: .5s;
   overflow: hidden;
 }
-.segment-three ul li .fab{
+.segment-three>ul>li>a>.fab{
   font-size: 25px;
   position: absolute;
   top: 50%;
@@ -431,18 +531,18 @@ body{
 /* 4.READING PROGRESS BAR */
 .header
 {
-  max-width: 100%;
-  width: 100%;
+  max-width: 100rem;
+  width:100rem;
   background: #f2f2f2;
   position: fixed;
-  top: 0;
+  top: 0px;
   height: 0px;
 }
 .scroll_bar
 {
   margin: -1px;
   height: 7px;
-  width: 100%;
+  width: auto;
   background: #ddd;
  }
 #scroll_indicator
@@ -461,7 +561,7 @@ html
   background: white;
   position: fixed;
   bottom: 10px;
-  right: 32px;
+  left: 90%;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -504,29 +604,5 @@ html
 }
 
 
-/*7.NAVBAR MEDIA QUERY */
-@media screen and (max-width:990px){
-  .navbar .dropdown-menu
-{
-  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
-  border-top: 5px solid cyan;
-  padding: 15px;
-  top: 96px;
-  border-radius: 0;
-  display: none;
-  visibility: hidden;
-  transition: .3s ease;
-  opacity: 0;
-  -webkit-transform: translateY(20px);
-  transform: translateY(20px);
-  background: #fff;
-}
-.navbar .dropdown:hover .dropdown-menu {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  top:40px;
-}
-/*END OF MEDIA QUERY */
+
+
