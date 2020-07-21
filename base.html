@@ -381,7 +381,7 @@
     <div class="mouseLayout">
 
     </div>
-    <p>Scroll</p>
+    
   </div>
 </div>
   <!--END OF VIDEO -->
@@ -699,7 +699,8 @@
           </div>
         </div>
       </div>
-      <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+      
+      <div class="p-2 d-sm-none d-md-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
         <div class="card card1 shadow1" data-aos="zoom-out-up" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="NIASAthesisawards.png"  alt="NIASA THESIS AWARD" title="Niasa Thesis Award">
@@ -710,7 +711,7 @@
           </div>
         </div>
       </div>
-      <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+      <div class="p-2 d-sm-none d-md-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
       <div class="card card1 shadow1" data-aos="zoom-in-left" style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="pidiliteaward1.png"  alt="PILIDILITE AWARD" title="Pilidilite Award">
@@ -721,7 +722,7 @@
         </div>
       </div>
     </div>
-    <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+    <div class="p-2 d-sm-none d-md-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
       <div class="card card1 shadow1" data-aos="zoom-out" style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="professortonymemorialaward.png"  alt="PROFESSOR TONY MEMORIAL AWARD" title="Professor Tony Memorial Award">
@@ -732,7 +733,7 @@
         </div>
       </div>
     </div>
-    <div class="p-2   col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+    <div class="p-2 d-sm-none d-md-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
       <div class="card card1 shadow1" data-aos="fade-left"  style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="beststudio.png"  alt="BEST STUDIO PROJECT" title="Best Studio Project">
@@ -743,10 +744,25 @@
         </div>
       </div>
     </div>
+    
+    
   </div><!--end of card-deck-->
+  <button class="btn d-sm-block d-md-none d-lg-none d-xl-none btn-secondary som">show more awards</button><!--end of bom-->
 </div><!--end of row-->
+
 </div><!--end of container -->
 <!-- END OF AWARDS-->
+<script>
+  $(document).ready(function(){
+    $(".som").click(function(){
+      $(".bom").toggleClass("d-sm-none");
+      $(".bom").toggleClass("d-md-block");
+      var textNew = $(this).text() === 'hide' ? 'show more awards' : 'hide'; 
+      $(".som").text(textNew);
+    });
+   
+  });
+</script>
 <!-- MARQUEE TAG FOR COMPANIES-->
   <marquee class="company" behavior="scroll" direction="left" scrollamount="15" scrolldelay="1" role="marquee" onmouseover="this.stop();" onmouseout="this.start();">
     <h1 class="companyh1">CSE :</h1>
