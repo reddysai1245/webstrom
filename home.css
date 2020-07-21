@@ -384,9 +384,18 @@ owl-theme .owl-controls .owl-page {
   border: 1px solid red;
   
 }
-.som:hover{
+.btn-secondary:not(:disabled):not(.disabled):active.som:active{
   background-color: transparent;
   color: red;
+  border: 1px solid red;
+  text-decoration: wavy;
+}
+.som:focus {
+  box-shadow: 0 0 0 0.2rem rgba(245, 13, 13, 0.959);
+}
+.som:hover{
+  background-color: red;
+  color: white;
   border: 1px solid red;
   text-decoration: wavy;
 }
