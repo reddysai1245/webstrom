@@ -19,9 +19,22 @@
 {% endblock scriptblock %}
 {% block bodyblock %}
   <!--VIDEO-->
+  <div class="continer-fuid vid">
   <video class="video" width="100%" height="100%" muted="true" autoplay loop>
     <source src="static/videos/video1.mp4" type="video/mp4">
   </video>
+<div class="tipTool">
+  <a type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<strong>Sathyabama University</strong><br>OMR<br>Rajiv Gandhi salai<br>Semancherray<br>chennai." ><span class="loc"><i class="fas fa-map-marker-alt fa-2x"></i></span></a>
+</div>
+<div class="center">
+  <div class="mouseLayout">
+
+  </div>
+  <p>Scroll</p>
+</div>
+</div>
+<!--END OF VIDEO -->
+
   <!--END OF VIDEO -->
   <!-- LATEST NEWS -->
   <div class="onoffswitch3">
@@ -74,7 +87,7 @@
 <div class="container">
   <div class="row" data-aos="fade-left">
   <div class="card-deck">
-    <div class="col-lg-4 col-md-6">
+    <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
       <div class="card shadow1" style="width: 18rem;height: 30rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Programs Offered/diploma.jpg" %}" alt="Card image cap">
@@ -90,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
       <div class="card shadow1" style="width: 18rem;height: 30rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Programs Offered/B.Tech.jpg" %}" alt="Card image cap">
@@ -106,7 +119,7 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
       <div class="card shadow1" style="width: 18rem;height: 30rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Programs Offered/M.Tech.jpg" %}" alt="Card image cap">
@@ -238,10 +251,8 @@
         <div class="btn">
           <button data-toggle="modal" data-target="#johan">VIEW PROFILE</button>
         </div>
-
       </div>
     </div>
-
   </div>
 </div>
 </div>
@@ -290,10 +301,11 @@
 <!--AWARDS -->
 <h1 id="awardsh1" data-aos="fade-left">AWARDS AND ACCOLADES</h1>
 <div class="container2" data-aos="fade-right">
-  <div class="row">
+  <div class="row justify-content-center">
     <div class="card-deck">
-      <div class="col-lg-3 col-md-6">
-        <div class="card shadow1" data-aos="slide-left" style="width: 18rem;height: 29rem;">
+
+      <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+        <div class="card shadow1" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/guinness1.png" %}" alt="GUINNESS" title="Guinness World Record">
           </div>
@@ -303,8 +315,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card shadow1" data-aos="zoom-in"style="width: 18rem;height: 29rem;">
+      <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+        <div class="card shadow1" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/birla.jpg" %}" alt="BIRLA" height="172.28" title="Birla White Yuva Ratna">
           </div>
@@ -314,8 +326,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card shadow1" data-aos="zoom-in-right" style="width: 18rem;height: 29rem;">
+      <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+        <div class="card shadow1" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/limca2.png" %}" alt="LIMCA BOOK OF RECORDS" title="Limaca Book of Records">
           </div>
@@ -325,8 +337,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card card1 shadow1" data-aos="zoom-out-down" style="width: 18rem;height: 29rem;">
+      <div class="p-2 col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto">
+        <div class="card card1 shadow1" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/sharonplywoods2.png" %}" alt="NATIONAL LEVEL AWARD" title="National Level Award">
           </div>
@@ -336,8 +348,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card card1 shadow1" data-aos="zoom-out-up" style="width: 18rem;height: 29rem;">
+      <div class="p-2 d-none d-sm-none d-md-block d-lg-block d-xl-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
+        <div class="card card1 shadow1" style="width: 18rem;height: 29rem;">
           <div class="inner">
             <img class="card-img-top" src="{%static "images/Awards/NIASAthesisawards.png" %}" alt="NIASA THESIS AWARD" title="Niasa Thesis Award">
           </div>
@@ -347,8 +359,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-      <div class="card card1 shadow1" data-aos="zoom-in-left" style="width: 18rem;height: 29rem;">
+      <div class="p-2 d-none d-sm-none d-md-block d-lg-block d-xl-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
+      <div class="card card1 shadow1" style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Awards/pidiliteaward1.png" %}" alt="PILIDILITE AWARD" title="Pilidilite Award">
         </div>
@@ -358,8 +370,8 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-md-6">
-      <div class="card card1 shadow1" data-aos="zoom-out" style="width: 18rem;height: 29rem;">
+    <div class="p-2 d-none d-sm-none d-md-block d-lg-block d-xl-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
+      <div class="card card1 shadow1" style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Awards/professortonymemorialaward.png" %}" alt="PROFESSOR TONY MEMORIAL AWARD" title="Professor Tony Memorial Award">
         </div>
@@ -369,8 +381,8 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-3 col-md-6">
-      <div class="card card1 shadow1" data-aos="fade-left"  style="width: 18rem;height: 29rem;">
+    <div class="p-2 d-none d-sm-none d-md-block d-lg-block d-xl-block col-lg-auto col-md-auto col-sm-auto col-xs-auto mx-auto bom">
+      <div class="card card1 shadow1" style="width: 18rem;height: 29rem;">
         <div class="inner">
           <img class="card-img-top" src="{%static "images/Awards/beststudio.png" %}" alt="BEST STUDIO PROJECT" title="Best Studio Project">
         </div>
@@ -384,16 +396,158 @@
 </div><!--end of row-->
 </div><!--end of container -->
 <!-- END OF AWARDS-->
-<!-- MARQUEE TAG FOR COMPANIES-->
-  <marquee class="company" behavior="scroll" direction="left" scrollamount="15" scrolldelay="1" role="marquee" onmouseover="this.stop();" onmouseout="this.start();">
-    <h1 class="companyh1">CSE :</h1>
-    <img src="{% static "images/Companies/accenture.jpg" %}" alt="" width="158" height="73">
-    <img src="{% static "images/Companies/asian paints.jpg" %}" alt="" width="158" height="73">
-    <img src="{% static "images/Companies/balcon.jpg" %}" alt="" width="158" height="73">
-    <img src="{% static "images/Companies/birla soft.jpg" %}" alt="" width="158" height="73">
-    <img src="{% static "images/Companies/csc.jpg" %}" alt="" width="158" height="73">
-    <img src="{% static "images/Companies/hcl.jpg" %}" alt="" width="158" height="73">
-  </marquee>
+<button class="btn d-block d-sm-block d-md-none d-lg-none d-xl-none btn-secondary som">show more awards</button><!--end of bom-->
+<!-- SCRIPT FOR BUTTON IN AWARDS -->
+<script>
+  $(document).ready(function(){
+    $(".som").click(function(){
+      $(".bom").toggleClass("d-sm-none");
+      $(".bom").toggleClass("d-none")
+      $(".bom").toggleClass("d-md-block");
+      var textNew = $(this).text() === 'click to hide' ? 'show more awards' : 'click to hide';
+      $(".som").text(textNew);
+      $(document).scrollTop(3300);
+    });
+
+  });
+</script>
+<!-- END OF BUTTON IN AWARDS -->
+<!-- CAMPUS SLIDES -->
+<h3 style="text-align:center; color:grey;">A Campus</h2>
+<h2 style="text-align:center; margin-bottom:20px; color:#413F3F;font-weight: normal;">TO FALL IN LOVE WITH <i class="far fa-thumbs-up" style="font-size: 50px;"></i></h2>
+<section class="col-md-12" style="background-color: #F5F5F5;">
+  <div style="padding-top:0px;padding-bottom:0px;" class="row">
+    <div style="padding:0px;" class="col-md-6">
+      <a href="{% static "images/campus-slides/slide1.jpg" %}">
+        <img src="{% static "images/campus-slides/slide1.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide2.jpg" %}">
+        <img src="{% static "images/campus-slides/slide2.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide3.jpg" %}">
+        <img src="{% static "images/campus-slides/slide3.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide4.jpg" %}">
+        <img src="{% static "images/campus-slides/slide4.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide5.jpg" %}">
+        <img src="{% static "images/campus-slides/slide5.jpg"%}" alt="slide1" width="380px" height="253px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide6.jpg" %}">
+        <img src="{% static "images/campus-slides/slide6.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide7.jpg" %}">
+        <img src="{% static "images/campus-slides/slide7.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide8.jpg" %}">
+        <img src="{% static "images/campus-slides/slide8.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide9.jpg" %}">
+        <img src="{% static "images/campus-slides/slide9.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide10.jpg" %}">
+        <img src="{% static "images/campus-slides/slide10.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide11.jpg" %}">
+        <img src="{% static "images/campus-slides/slide11.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide12.jpg" %}">
+        <img src="{% static "images/campus-slides/slide12.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide13.jpg" %}">
+        <img src="{% static "images/campus-slides/slide13.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide14.jpg" %}">
+        <img src="{% static "images/campus-slides/slide14.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide15.png" %}">
+        <img src="{% static "images/campus-slides/slide15.png"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide16.webp" %}">
+        <img src="{% static "images/campus-slides/slide16.webp"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+      <a href="{% static "images/campus-slides/slide17.jpg" %}">
+        <img src="{% static "images/campus-slides/slide17.jpg"%}" alt="slide1" width="190px" height="127px" style="float:left" >
+      </a>
+    </div>
+  </div>
+</section>
+<!-- END OF CAMPUS SLIDES -->
+<!-- companies -->
+<section class="col-md-12" style="background-color: #F5F5F5; margin-top:25px;">
+  <div class="row">
+      <div class="col-md-6">
+    <h1>SATHYABAMA</h1>
+  </div>
+  <div class="col-md-6 col-lg-6 mb-3 mb-sm-0 pt-3">
+    <div class="row justify-content-center mb-0">
+  		<div class="col-md-6 col-lg-6 mb-4">
+  			<div class="row justify-content-center">
+  				<div class="col-3 col-lg-3 placements-icon">
+  					<img src="{% static "images/Companies/placement-1.png" %}" alt="award-modi" class="img-fluid">
+  				</div>
+  				<div class="col-9 col-lg-9 placements-contnet-box">
+  					<div class="placements-contnet">
+  						<h3 class="h6">15,000+ Placements</h3>
+  						<p class="text-jusify"><small>We continuously strive towards facilitating campus-drives with eminent companies offering the most worth-while career opportunities.</small></p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	  <div class="col-md-6 col-lg-6 mb-4">
+  			<div class="row justify-content-center">
+  				<div class="col-3 col-lg-3 placements-icon">
+  					<img alt="award-modi" src="{% static "images/Companies/placement-2.png" %}" class="img-fluid">
+  				</div>
+  				<div class="col-9 col-lg-9 placements-contnet-box">
+  					<div class="placements-contnet">
+  						<h3 class="h6">18+ LPA Milestone Packages</h3>
+  						<p class="text-jusify"><small>We annually avail the most lucrative jobs which offer milestone packages in the most distinguished industries. Read More</small></p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row justify-content-center">
+  		<div class="col-md-6 col-lg-6 mb-4">
+  			<div class="row justify-content-center">
+  				<div class="col-3 col-lg-3 placements-icon">
+  					<img alt="award-modi" src="{% static "images/Companies/placement-3.png" %}" class="img-fluid">
+  				</div>
+  			   <div class="col-9 col-lg-9 placements-contnet-box">
+  					<div class="placements-contnet">
+  						<h3 class="h6">1,000+ Companies</h3>
+  						<p class="text-jusify"><small>Our annually avail the most lucrative jobs which offer milestone packages in the most distinguished industries.</small></p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="col-md-6 col-lg-6 mb-4">
+  		   <div class="row justify-content-center">
+  				 <div class="col-3 col-lg-3 placements-icon">
+  					 <img alt="award-modi" src="{% static "images/Companies/placement-4.png" %}" class="img-fluid">
+  					</div>
+  					<div class="col-9 col-lg-9 placements-contnet-box">
+  						<div class="placements-contnet">
+  							<h3 class="h6">20,000+ Opportunities</h3>
+  							<p class="text-jusify"><small>We continuously strive towards facilitating campus-drives with eminent companies offering the most worth-while career opportunities.</small></p>
+  						</div>
+  					</div>
+  				</div>
+  		</div>
+  	</div>
+  </div>
+</div>
+<marquee class="company" style="margin-left:750px; margin-right:30px;" behavior="scroll" direction="left" scrollamount="15" scrolldelay="1" role="marquee" onmouseover="this.stop();" onmouseout="this.start();">
+  <h1 class="companyh1" style="float: left;font-size: 70px;padding-right: 30px;">CSE :</h1>
+  <img src="{% static "images/Companies/accenture.jpg" %}" alt="" width="158" height="73">
+  <img src="{% static "images/Companies/asian paints.jpg" %}" alt="" width="158" height="73">
+  <img src="{% static "images/Companies/balcon.jpg" %}" alt="" width="158" height="73">
+  <img src="{% static "images/Companies/birla soft.jpg" %}" alt="" width="158" height="73">
+  <img src="{% static "images/Companies/csc.jpg" %}" alt="" width="158" height="73">
+  <img src="{% static "images/Companies/hcl.jpg" %}" alt="" width="158" height="73">
+</marquee>
+</section>
 <!-- SCRIPT FOR CHANCELLORS SLIDER -->
 <script>
 $('.testimonial-carousel').owlCarousel({
@@ -425,4 +579,10 @@ $('.testimonial-carousel').owlCarousel({
    });
 </script>
 <!-- END OF CONTENT SLIDER SCRIPT -->
+<!--location tooltip SCRIPT-->
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+<!--end of location tooltip-->
 {% endblock bodyblock %}
